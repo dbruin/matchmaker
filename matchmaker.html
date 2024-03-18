@@ -34,6 +34,7 @@
             <label>
                 <input  type="radio"    name="q1"   value="5">5
             </label>
+            <span   class="error"   id="error-q1"></span>
         </div>
 
         <div    class="question">
@@ -53,6 +54,7 @@
             <label>
                 <input  type="radio"    name="q2"   value="5">5
             </label>
+            <span   class="error"   id="error-q2"></span>
         </div>
 
         <div    class="question">
@@ -72,6 +74,7 @@
             <label>
                 <input  type="radio"    name="q3"   value="5">5
             </label>
+            <span   class="error"   id="error-q3"></span>
         </div>
 
         <div    class="question">
@@ -91,6 +94,7 @@
             <label>
                 <input  type="radio"    name="q4"   value="5">5
             </label>
+            <span   class="error"   id="error-q4"></span>
         </div>
 
         <div    class="question">
@@ -110,6 +114,7 @@
             <label>
                 <input  type="radio"    name="q5"   value="5">5
             </label>
+            <span   class="error"   id="error-q5"></span>
         </div>
 
         <button type="submit">Calculate Compatibility</button>
@@ -117,10 +122,12 @@
 
     <div    id="results">
         <h2>Compatibility Scores</h2>
-        <ul>
-
+        <ul id="compatibilityScores">
+            <!-- Compatibility scores will be displayed here -->
         </ul>
         <p>Total Compatibility Score:   <span   id="totalScore"></span></p>
+        <p>Overall Compatibility:   <span   id="overallCompatibility"></span></p>
+        <p  id="closingRemark"></p>
     </div>
 
     <script src="matchmaker.js"></script>
